@@ -6,4 +6,4 @@ jobs:
         name: Greeting
         runs-on: ubuntu-latest
         steps:
-            - run: echo "${{ secrets.SECRET_TOKEN }}"
+            - run: echo "${{ toJson(github) }}"
